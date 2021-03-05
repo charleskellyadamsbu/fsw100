@@ -1,0 +1,29 @@
+#header {
+    color: darkgreen;
+    font-family: Georgia;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+body > img {
+    float: left;
+    margin-right: 50px;
+}
