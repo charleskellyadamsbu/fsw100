@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    align-content: center;
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: rgb(189, 129, 129);
+    border:2px solid rgb(82, 72, 72);
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(82, 72, 72);
+    margin-top: 100px;
+}
+
+footer > ul {
+    list-style: circle;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+li.navbar-link:hover {
+    background-color: rgb(189, 129, 129);
+}
+
+nav > ul {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: rgb(216, 198, 198);
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+}
+
+.card {
+    padding: 10px;
+    text-align: center;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+}
+
+.column-1 {
+    grid-column: 1 / 2;
+}
+
+.column-2 {
+    grid-column: 2 / 3;
+}
+
+.column-3 {
+    grid-column: 3 / 4;
+}
+
+.column-4 {
+    grid-column: 4 / 5;
+}
+
+.column-5 {
+    grid-column: 5 / 6;
+}
+
+.column-full {
+    grid-column: 1 / -1;
+}
+
+.column-wide {
+    grid-column: 2 / 5;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 300px) minmax(auto, 300px) minmax(auto, 300px) auto;
+    grid-auto-rows: auto;
+}
+
+.footer-info {
+    color: white;
+}
+
+.footer-info > a {
+    color: white;
+}
+
+.gradient {
+    height: 200px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.landing {
+    background-image: url('horse.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.landing > h1 {
+    font-size: 64px;
+    margin-bottom: 0px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.landing > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.landing-button {
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgb(82, 72, 72);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-link > a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-link {
+    display: inline-block;
+    line-height: 50px;
+    color: black;
+    list-style: none;
+    height: 100%;
+    width: 150px;
+    text-align: center;
+}
+
+#first-section {
+    height: 100%;
+}
+
+#navbar-logo {
+    line-height: 50px;
+}
+
+@media only screen and (max-width: 724px) {
+    nav {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .column-1, .column-5 {
+        display: none;
+    }
+
+    .column-2 > ul, .column-3 > ul, .column-4 > ul {
+        text-align: center;
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    .column-1, .column-2, .column-3, .column-4, .column-5 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar {
+        position: relative;
+        display: block;
+        height: auto;
+    }
+
+    .navbar-link {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    #navbar-logo {
+        font-size: 32px;
+    }
+}
