@@ -75,6 +75,10 @@ th {
     text-align: center;
 }
 
+.card > ul {
+    text-align: center;
+}
+
 .card > img {
     width: 200px;
     height: 200px;
@@ -114,6 +118,10 @@ th {
     display: grid;
     grid-template-columns: auto minmax(auto, 300px) minmax(auto, 300px) minmax(auto, 300px) auto;
     grid-auto-rows: auto;
+}
+
+footer {
+    padding: 25px;
 }
 
 .footer-info {
