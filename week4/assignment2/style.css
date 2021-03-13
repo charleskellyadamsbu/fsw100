@@ -124,6 +124,10 @@ footer {
     padding: 25px;
 }
 
+header {
+    height: 100vh;
+}
+
 .footer-info {
     color: white;
 }
