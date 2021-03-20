@@ -1,0 +1,128 @@
+@media only screen and (min-width: 769px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto 75% auto;
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
+
+    header {
+        background-color:  rgb(155, 155, 155);
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        padding: 5px;
+    }
+    
+    main {
+        background-color:  gray;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        padding: 5px;
+    }
+    
+    footer {
+        background-color:  rgb(155, 155, 155);
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        padding: 5px;
+    }
+    
+    .sidebar1 {
+        background-color: gray;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 5px;
+    }
+    
+    .sidebar2 {
+        background-color: silver;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
+
+    header {
+        background-color:  rgb(179, 179, 179);
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    main {
+        background-color: gray;
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    footer {
+        background-color: rgb(155, 155, 155);
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .sidebar1 {
+        background-color: gray;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .sidebar2 {
+        background-color: silver;
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 425px)  {
+    .grid-container {
+        display: block;
+    }
+
+    header {
+        background-color: rgb(155, 155, 155);
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    main {
+        background-color: gray;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    footer {
+        background-color: rgb(155, 155, 155);
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .sidebar1 {
+        background-color: gray;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .sidebar2 {
+        background-color: silver;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

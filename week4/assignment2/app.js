@@ -29,10 +29,3 @@ window.addEventListener('scroll', (Event) => {
         }
     }
 });
-
-let scrollY = 0;
-
-function buttonScrollDown() {
-    window.scroll(0, window.scrollY + 1);
-}
-
