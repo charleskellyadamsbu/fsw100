@@ -1,0 +1,68 @@
+.box1 {
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+}
+
+.box1:hover {
+    background-color: red;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.box2 {
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+}
+
+.box2:hover {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.box3 {
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+}
+
+.box3:hover {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.box4 {
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+}
+
+.box4:hover {
+    padding: 10px;
+    margin: 10px;
+}
+
+.box5 {
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+}
+
+.box5:hover {
+    color: green;
+    text-transform: lowercase;
+}
+
+.box6 {
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+}
+
+.box6:hover {
+    position: fixed;
+    opacity: 0.5;
+    bottom: 0px;
+}
