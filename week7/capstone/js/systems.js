@@ -17,10 +17,14 @@ class SpriteSystem {
 
     }
 
-    update(ctx, camera) {
+    update(ctx, camera, player) {
         for(let i = 0; i < maxEntities; i++) {
             if(sprites[i] != null && entities[i] != null) {
-                ctx.drawImage(spriteSheet, sprites[i].x * 32, sprites[i].y * 32, 32, 32, -camera.x + entities[i].x, -camera.y + entities[i].y, 32, 32);
+                if(entities[i].x / 32 > player.x / 32 - 10 && entities[i].x / 32 < player.x / 32 + 10) {
+                    if(entities[i].y / 32 > player.y / 32 - 10 && entities[i].y / 32 < player.y / 32 + 10) {
+                        ctx.drawImage(spriteSheet, sprites[i].x * 32, sprites[i].y * 32, 32, 32, -camera.x + entities[i].x, -camera.y + entities[i].y, 32, 32);
+                    }
+                }
             }
         }
     }

@@ -34,17 +34,36 @@ for(let i = 0; i < maxEntities; i++) {
 tilemaps.push(new TerrainTileMap());
 
 let canvas = new Canvas();
+
+function spawnEntity(x, y, entity) {
+    if(collisionGrid.getGridItem(x, y) == false) {
+        entity.x = x * 32;
+        entity.y = y * 32;
+        collisionGrid.setGridItem(x, y, true);
+        return true;
+    }
+
+    return false;
+}
+
 let player = new Player();
-let camera = new Camera();
-let playerJustMoved = false;
+while(spawnEntity(randomInt(0, 32), randomInt(0, 32), player) == false) {
+
+}
+
+for(let i = 0; i < 128; i++) {
+    spawnEntity(randomInt(0, 32), randomInt(0, 32), new Zombie());
+}
+
+let time = 0;
+
 function updateLoop() {
     canvas.ctx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
     camera.x = player.x - document.body.clientWidth / 2 - 16;
     camera.y = player.y - document.body.clientHeight / 2 - 16;
-
     entitySystem.update();
     tileMapSystem.update(canvas.ctx, camera, player);
-    spriteSystem.update(canvas.ctx, camera);
+    spriteSystem.update(canvas.ctx, camera, player);
 
     if(playerJustMoved == true) {
         playerJustMoved = false;

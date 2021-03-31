@@ -22,12 +22,15 @@ class TileMap {
 class TerrainTileMap extends TileMap {
     constructor() {
         super(terrainGrid.w, terrainGrid.h, 0);
-        for(let y = 0; y < 32; y++) {
-            for(let x = 0; x < 32; x++) {
-                if(x != 4) {
+        noise.seed(Math.random());
+        for(let y = 0; y < gridSize; y++) {
+            for(let x = 0; x < gridSize; x++) {
+                let value = noise.simplex2(x / 8, y / 8);
+                
+                if(value >= 0.0 && value < 0.3) {
                     this.setTerrainTile(x, y, new Grass());
                 } else {
-                    this.setTerrainTile(x, y, new Water());
+                    this.setTerrainTile(x, y, new Grass());
                 }
             }
         }

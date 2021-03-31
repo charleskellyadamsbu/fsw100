@@ -1,5 +1,6 @@
-const maxEntities = 100;
-const gridSize = 32;
+const maxEntities = 1000;
+const gridSize = 1024;
+let playerJustMoved = false;
 
 class Camera {
     constructor() {
@@ -10,6 +11,8 @@ class Camera {
     }
 }
 
+let camera = new Camera();
+
 function loadImage(path) {
     let image = new Image();
     image.onload = function() {
@@ -17,6 +20,10 @@ function loadImage(path) {
     }
     image.src = path;
     return image;
+}
+
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
 let spriteSheet = loadImage('../spritesheet.png');
