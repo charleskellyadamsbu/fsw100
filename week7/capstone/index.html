@@ -4,39 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zombie Farm</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-    <div class="grid-container">
+    <div class="container">
         <header>
             <section>
-                <nav class="navbar">
-                    <ul class="mt-50">
-                        <li class="mbt-10"> <a href="#"><img src="https://via.placeholder.com/50x50"></img></a></li>
-                        <li class="mbt-10"> <a href="#"><img src="https://via.placeholder.com/50x50"></img></a></li>
-                        <li class="mbt-10"> <a href="#"><img src="https://via.placeholder.com/50x50"></img></a></li>
-                        <li class="mbt-10"> <a href="#"><img src="https://via.placeholder.com/50x50"></img></a></li>
+                <nav>
+                    <ul id="navbar">
+                        <section>
+                            <div id="hamburger" type="button">
+                                <div class="hamburger-line"></div>
+                                <div class="hamburger-line"></div>
+                                <div class="hamburger-line"></div>
+                            </div>
+                        </section>
+
+                        <section id="nav-brand">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Programming Blueprints</span>
+                        </section>
+
+                        <section>
+                            <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        </section>
                     </ul>
                 </nav>
             </section>
-        </header>
     
-        <main class="content">
-            <section>
-                <div class="banner">
-                    <h1>Zombie Farm</h1>
-                    <h3>Don't Become One Of Them!</h3>
-                </div>
+            <section id="header">
+                <h1 id="header-h1">- Programming Blueprints -</h1>
+                <h4 id="header-h2">An amazing resource to learn game programming, mathematics, design patterns and algorithms.</h4>
+                <a href="purchase.html"><div id="purchase-button"><i class="fas fa-credit-card"></i>Purchase</div></a>
+            </section>
+        </header>
+
+        <main>
+            <img id="banner" src="res/index-header.jpeg"/>
+            <section id="main">
+                <h1>What is Programming Blueprints?</h1>
+                <p>Programming Blueprints is an online resource that will teach you how to make a game engine from scratch.</p>
+                <h1>Languages / Frameworks Taught</h1>
+                <section id="taught">
+                    <ol>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>Lua</li>
+                    </ol>
+
+                    <ol>
+                        <li>OpenGL</li>
+                        <li>DirectX</li>
+                        <li>GLFW</li>
+                        <li>SDL</li>
+                        <li>SFML</li>
+                    </ol>
+                </section>
+                <h1>Featured Courses</h1>
+                <table>
+                    <tr>
+                        <th>Chapter</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Five</td>
+                        <td>Game Design Patterns</td>
+                    </tr>
+                    <tr>
+                        <td>Eight</td>
+                        <td>OpenGL 4.5</td>
+                    </tr>
+                    <tr>
+                        <td>Nine</td>
+                        <td>DirectX 12</td>
+                    </tr>
+                    <tr>
+                        <td>Ten</td>
+                        <td>Linear Algebra</td>
+                    </tr>
+                </table>
             </section>
 
-            <section>
+            <section id="articles">
+                <article>
+                    <h1>OpenGL Wireframe</h1>
+                    <img src="res/one.jpeg"/>
+                    <a href="#">Read</a>
+                </article>
 
+                <article>
+                    <h1>Shaders</h1>
+                    <img src="res/two.png"/>
+                    <a href="#">Read</a>
+                </article>
+
+                <article>
+                    <h1>Intro to C++</h1>
+                    <img src="res/three.png"/>
+                    <a href="#">Read</a>
+                </article>
             </section>
         </main>
-    
+
         <footer>
-    
+            <p>Author: Charles Adams</p>
+            <p>E-Mail: charleskellyadams@gmail.com</p>
+            <p>Phone: 555-555-5555</p>
         </footer>
     </div>
 </body>
